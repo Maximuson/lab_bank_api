@@ -1,0 +1,77 @@
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.valute-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+.valute__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid #0000001b;
+  transition: all 0.3s ease-in-out;
+  flex-direction: column;
+}
+.valute__item:hover {
+  /* transform: scale(1.02); */
+  /* padding: 10px 20px; */
+  padding-left: 25px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.valute__item-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.valute__item-bottom-container {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+.valute__item-bottom-item {
+  border-bottom: 1px solid #000000a1;
+}
+.valute__ammount {
+  margin-left: 20px;
+}
+.btn-more {
+  border: 1px solid #000000a1;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
